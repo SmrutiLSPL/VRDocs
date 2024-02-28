@@ -12,7 +12,12 @@
           Reservation to housekeeping system work-flow
     </p>
 </tip> 
+<code-block lang="mermaid">
+graph LR
+   A[Reservation Grid]
+   A -- To  --> B[Housekeeping View]
 
+</code-block>
 
 <note>
     <p>
@@ -23,19 +28,39 @@ A reservation is created with below mention details
 
 
 {type="narrow" sorted="desc"}
+
 Date 
 : 16/03/2024 to 24/03/2024
 
 Unit name 
 : SHORE111
 
+<img src="image.png" alt="Alt text" width="600"/>
 
-![image.png](image.png)
 
 
-<chapter title="Cheat sheet " id="example-chapter-id">
-1. Housekeeping tasks are scheduled for March 27th (checkout day) and inspection tasks for March 23rd (check-in day).
-2. User modifies the reservation dates to a new range (E.G. March 25th to March 29th).
-3. The dispatch system should update the housekeeping tasks to March 29th (new checkout day) and inspection tasks to March 25th (new check-in day).
+<chapter title="Housekeeping work-flow  " id="example-chapter-id">
+
+<procedure title="Housekeeping tasks are scheduled for March 25th." collapsible="true">
+<img src="image_1.png" alt="Alt text" width="600"/>
+<tip>
+    <p>
+    Housekeeping details will appear on the screen the day after checkout. 
+    </p>
+</tip> 
+</procedure>
+
+<procedure title="User modifies the housekeeping schedule." collapsible="true">
+<img src="image_2.png" alt="Alt text" width="400"/>
+<tip>
+    <p>
+        The dispatch system should update the housekeeping tasks to March 26th (new checkout day)
+    </p>
+</tip> 
+</procedure>
+
+
+
+
 
 </chapter>
