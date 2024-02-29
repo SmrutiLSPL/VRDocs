@@ -19,7 +19,7 @@ communication among staff members, and ultimately contributes to maintaining cle
 
 
 <code-block lang="mermaid">
-graph LR
+flowchart LR
    A[Reservation]
    A ----> B[Disptch View ]
    B----> C[Inspection Task]
